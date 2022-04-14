@@ -7,12 +7,13 @@
         "Color Fading": "github:jwunderl/pxt-color#v0.2.2"
     },
     "files": [
-        "main.blocks",
         "main.ts",
         "assets.json",
         "tilemap.g.jres",
         "tilemap.g.ts",
-        "README.md"
+        "README.md",
+        "images.g.jres",
+        "images.g.ts"
     ],
     "testFiles": [
         "test.ts"

@@ -1,0 +1,17 @@
+{
+    "image1": {
+        "data": "hwQeABAAAAD//////////x8RERERERHxH/EfERH///EfEfERER8f8R/xHxER8RHxHxEREREREfEfEfERERER8R8RERERERHxH/HxEREREfEf//8RERER8R8R8RERERHxHxEREREREfEfEfERERER8R8RERERERHxHxEREREREfEf8fERERER8R///xERERHxHxHxEREREfEfERERERER8R8RERERERHxHxEREREREfEfERERERER8R8RERERERHxHxEREREREfEfERERERER8R8RERERERHxHxEREREREfEfERERERER8R8RERERERHx//////////8=",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "VersionPanel"
+    },
+    "image2": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAPAPAAAAAPD///7gRAAA/+/v7k9NAPD/Lv/k/v8A8O/yv9EuQv//4vL+3yRC/y/i8k7dJFIPL+LyTt0kUg//4vL+3yRC//Dv8r/RLkL/8P8u/+T+/wAA/+7v7k9NAADw///+4EQAAAAA8A8AAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "Jake"
+    },
+    "*": {
+        "mimeType": "image/x-mkcd-f4",
+        "dataEncoding": "base64",
+        "namespace": "myImages"
+    }
+}
