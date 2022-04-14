@@ -382,6 +382,7 @@ if (story.checkLastAnswer("Play")) {
     Player1 = sprites.create(assets.image`Jake`, SpriteKind.Player)
     scene.cameraFollowSprite(Player1)
     tiles.placeOnRandomTile(Player1, sprites.dungeon.floorLight0)
+    controller.moveSprite(Player1)
 } else {
     game.showLongText("Version 1.1 Made by TripleOxygen and NINJA.", DialogLayout.Bottom)
     game.reset()

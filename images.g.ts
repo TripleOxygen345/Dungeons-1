@@ -3,25 +3,6 @@ namespace myImages {
 
     helpers._registerFactory("image", function(name: string) {
         switch(helpers.stringTrim(name)) {
-            case "image1":
-            case "VersionPanel":return img`
-ffffffffffffffffffffffffffffff
-f1111111111111111111111111111f
-f11111111f111111f111111111111f
-f1f1f111ff11111ff111111111111f
-f1f1f1111f111111f111111111111f
-f11f11f1fff1f11fff11111111111f
-f1111111111111111111111111111f
-f1111111111111111111111111111f
-f1111111111111111111111111111f
-f1111111111111111111111111111f
-f1ff1111111111111111111111111f
-f1f1f111111111111111111111111f
-f1ff1111111111111111111111111f
-f1f11111111111111111111111111f
-f1111111111111111111111111111f
-ffffffffffffffffffffffffffffff
-`;
             case "image2":
             case "Jake":return img`
 . . . . . . f f f f . . . . . . 
