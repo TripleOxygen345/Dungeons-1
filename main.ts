@@ -250,13 +250,12 @@ scene.setBackgroundImage(img`
     fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffbffffbffffdfffcddcfffffffffffffffff
     fffffffffffffffffffffffffffffffffbffffffbffffffffffffffffffffffbfcffffcfffffffffffffffcffffffffffffffffffffffffffffffffffffffffffffffffffffdddffffffffffccffffff
     `)
-story.showPlayerChoices("Play", "Version")
-if (story.checkLastAnswer("Play")) {
-    music.bigCrash.play()
-    color.FadeToBlack.startScreenEffect()
-    pause(5000)
-    color.clearFadeEffect()
-    scene.setBackgroundImage(img`
+pause(2000)
+music.bigCrash.play()
+color.FadeToBlack.startScreenEffect()
+pause(5000)
+color.clearFadeEffect()
+scene.setBackgroundImage(img`
         ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
         ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
         ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
@@ -377,13 +376,9 @@ if (story.checkLastAnswer("Play")) {
         ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
         ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
         ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
-        `)
-    tiles.setCurrentTilemap(tilemap`floor1`)
-    Player1 = sprites.create(assets.image`Jake`, SpriteKind.Player)
-    scene.cameraFollowSprite(Player1)
-    tiles.placeOnRandomTile(Player1, sprites.dungeon.floorLight0)
-    controller.moveSprite(Player1)
-} else {
-    game.showLongText("Version 1.0.0 Made by TripleOxygen and NINJA.", DialogLayout.Bottom)
-    game.reset()
-}
+    `)
+tiles.setCurrentTilemap(tilemap`floor1`)
+Player1 = sprites.create(assets.image`Jake`, SpriteKind.Player)
+scene.cameraFollowSprite(Player1)
+tiles.placeOnRandomTile(Player1, sprites.dungeon.floorLight0)
+controller.moveSprite(Player1)
