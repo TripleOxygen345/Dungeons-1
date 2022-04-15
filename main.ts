@@ -384,6 +384,6 @@ if (story.checkLastAnswer("Play")) {
     tiles.placeOnRandomTile(Player1, sprites.dungeon.floorLight0)
     controller.moveSprite(Player1)
 } else {
-    game.showLongText("Version 1.1 Made by TripleOxygen and NINJA.", DialogLayout.Bottom)
+    game.showLongText("Version 1.0.0 Made by TripleOxygen and NINJA.", DialogLayout.Bottom)
     game.reset()
 }
