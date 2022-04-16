@@ -1,5 +1,7 @@
 # README
 
+Copyright (c) 2022 TripleOxygen
+
 
 
 > Open this page at [https://tripleoxygen345.github.io/dungeons-1/](https://tripleoxygen345.github.io/dungeons-1/)
