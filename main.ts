@@ -383,6 +383,45 @@ scene.cameraFollowSprite(Player1)
 tiles.placeOnRandomTile(Player1, sprites.dungeon.floorLight0)
 controller.moveSprite(Player1)
 let Snake = sprites.create(assets.image`Snake`, SpriteKind.Enemy)
-tiles.placeOnTile(Snake, tiles.getTileLocation(10, 43))
-tiles.placeOnTile(Snake, tiles.getTileLocation(12, 41))
-tiles.placeOnTile(Snake, tiles.getTileLocation(14, 43))
+scene.onOverlapTile(SpriteKind.Player, img`
+    a c c c c c c c c c c c c c c c
+    c d d d d b d d d d b c d d b b
+    c d d d d b d d d d b c d d b b
+    a b b b b c b b b b b c d d b b
+    c c f f f f f f f f f c d d b b
+    c c c f f f f f f f f c d d b b
+    c c c f f f f f f f f c d d b b
+    c f c f f f f f f f f c d d b b
+    c f f f f f f f f f f c d d b b
+    c c f c f f f f f f f c d d b b
+    c c f c f f f f f f f c d d b b
+    c c f f f f f f f f f c d d b b
+    a b b b b c b b b b b c d d b b
+    c d d d d b d d d d b c d d b b
+    c d d d d b d d d d b c d d b b
+    a c c c c c c c c c c c c c c c
+`, function(sprite: Sprite, location: tiles.Location) {
+    
+    game.showLongText("You forgot?", DialogLayout.Bottom)
+    game.setDialogCursor(img`
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . 2 . . . . . . 2 . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        2 . . . . . . . . . . . . . . 2
+        2 . . . . . . . . . . . . . . 2
+        . 2 . . . . . . . . . . . 2 2 .
+        . . 2 . . . . . . . . . . 2 . .
+        . . . 2 . . . . . . . . 2 2 . .
+        . . . . 2 2 . . . . . 2 2 . . .
+        . . . . . 2 2 2 2 2 2 . . . . .
+        . . . . . . . . . . . . . . . .
+    `)
+    game.showLongText("That Dungeons 1 is W.I.P?", DialogLayout.Bottom)
+    game.showLongText("ahhhahahah", DialogLayout.Bottom)
+    game.reset()
+})
